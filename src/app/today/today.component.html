@@ -1,0 +1,189 @@
+  <html>
+    <head>
+  <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+<p>
+</p>
+<div class="row">
+  <div class="col-md-6 offset -md-3">
+    <div class="col-sm-12 text.center">
+      <h5>
+        hello current weather in {{weather.name}}, {{weather.sys.country}}
+      </h5>
+      <h2>
+        Weather in {{weather.sys.country}}
+      </h2>
+
+    </div>
+
+
+  </div>
+  </div>
+
+<body>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+
+
+<h2>WEATHER REPORT</h2>
+
+
+
+
+
+
+
+<table>
+  <tr>
+    <th>CITY</th>
+    <th>Type</th>
+    <th>Humidity</th>
+  </tr>
+  <tr>
+    <td>
+      
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="PLEASE ENTER THE CITY NAME HERE ">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+</td>
+    <td>{{weather.weather[0].description}}
+    </td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+            <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city in first text box pls">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+    </td>
+    <td>{{weather.weather[0].description}}</td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="pls enter in first text box" aria-describedby="emailHelp" placeholder="Enter city in first text box pls">
+    <input class="btn btn-primary" type="submit" onclick="myFunction()" (click)="getCity(userInput.value)">
+    
+  </div>
+
+
+    </td>
+    <td>{{weather.weather[0].description}}</td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td><div class="form-group">
+    <input type="" #userInput class="form-control" id="Enter city name in furst text box" aria-describedby="" placeholder="Enter city in first text box pls">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+</td>
+    <td>
+      {{weather.weather[0].description}}
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city in first text box pls">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+
+    </td>
+    <td>{{weather.weather[0].description}}</td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+
+            <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city in first text box pls">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+    </td>
+    <td>{{weather.weather[0].description}}
+    </td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+
+  <tr>
+    <td>
+      
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city name">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+</td>
+    <td>{{weather.weather[0].description}}
+    </td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+      
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city name">
+    <input class="btn btn-primary" type="submit"  (click)="getCity(userInput.value)">
+    
+  </div>
+
+</td>
+    <td>{{weather.weather[0].description}}
+    </td>
+    <td>{{weather.main.humidity}}%</td>
+  </tr>
+  <tr>
+    <td>
+      
+      <div class="form-group">
+    <input type="email" #userInput class="form-control" id="Enter city name" aria-describedby="emailHelp" placeholder="Enter city name">
+    <input class="btn btn-primary" type="submit" onclick="myFunction()" (click)="getCity(userInput.value)">
+    
+  </div>
+
+</td>
+    <td>{{weather.weather[0].description}}
+    </td>
+    <td><p id="demo"></p></td>
+  </tr>
+  
+</table>
+
+
+</body>
